@@ -60,11 +60,13 @@ const DropdownBtn = styled.button`
   }
 `;
 
-const CategoryItem = styled.div`
+const CategoryList = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 5px;
+  border-radius: 8px;
+  background: #ffffff;
   filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.2));
 
   div {
@@ -72,8 +74,7 @@ const CategoryItem = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 50px;
-    padding: 0px 12px;
-    background: #ffffff;
+    padding: 0px 15px;
 
     &:hover {
       background: rgba(108, 0, 255, 0.7);
@@ -105,11 +106,11 @@ export default function MenuBar() {
           </DropdownBtn>
         </MenuForm>
         {isOpened && (
-          <CategoryItem>
+          <CategoryList>
             {category.map((category) => (
               <div key={category}>{category}</div>
             ))}
-          </CategoryItem>
+          </CategoryList>
         )}
       </MenuWrapper>
     </Container>
