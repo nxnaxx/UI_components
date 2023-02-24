@@ -91,7 +91,7 @@ const CategoryList = styled.div`
   }
 `;
 
-export default function MenuBar() {
+export default function DropdownList() {
   const { isOpened, dropDownRef, onButtonClick } = useDropdown(false);
   const category = ['C', 'C++', 'Javascript', 'Python', 'JAVA'];
 
