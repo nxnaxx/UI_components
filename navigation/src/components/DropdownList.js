@@ -67,7 +67,7 @@ const CategoryList = styled.div`
   margin-top: 5px;
   border-radius: 8px;
   background: #ffffff;
-  filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
 
   div {
     display: flex;

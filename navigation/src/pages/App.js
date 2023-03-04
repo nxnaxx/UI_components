@@ -1,9 +1,11 @@
 import DropdownList from '../components/DropdownList';
+import Login from '../components/Login';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <DropdownList />
+      <Login />
     </div>
   );
 }
